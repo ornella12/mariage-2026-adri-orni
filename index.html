@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mariage — Thème Celtique & Nature</title>
+  <meta name="description" content="<h1>Ornella&nbsp;&amp;&nbsp;Adrien</h1>
+ — Mariage au Manoir de la Noë Verte (Lanloup). Programme, lieux, hébergements, RSVP, infos pratiques." />
+  <!-- Polices (elfique + élégante + lisible) -->
+  <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css?v=13"/>
+</head>
+
+<body>
+
+<!-- === NAVIGATION responsive (version élégante) === -->
+<header class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">OA</span> Ornella & Adrien
+    </a>
+
+    <!-- interrupteur burger -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Ouvrir le menu">
+      <span></span>
+    </label>
+
+<nav class="nav-links">
+  <a href="#programme">Programme</a>
+  <a href="#lieux">Lieux</a>
+  <a href="#rsvp" class="btn btn-primary">RSVP</a>
+  <a href="#liste">Liste</a>
+  <a href="#faq">FAQ</a>
+</nav>
+
+  </div>
+</header>
+
+
+<!-- === DEBUT : Section HÉRO (version portrait + texte à côté) === -->
+<section id="hero" class="hero-split">
+  <div class="hero-grid">
+    <div class="hero-photo" aria-hidden="true"></div>
+    <div class="hero-text">
+      <h1>Ornella&nbsp;&amp;&nbsp;Adrien</h1>
+      <p class="subtitle">Samedi 5 Septembre 2026<br>Manoir de la Noë Verte — Lanloup</p>
+      <a href=https://forms.gle/tWChiwjoKAqKnZkw6 class="btn btn-accent" target="_blank" rel="noopener noreferrer">Je confirme ma présence</a>
+    </div>
+  </div>
+</section>
+<!-- === FIN : Section HÉRO (version portrait + texte à côté) === -->
+
+
+ <!-- === DEBUT : Section PROGRAMME avec image === -->
+<section id="programme" class="section">
+  <div class="container">
+    <div class="programme-grid">
+      
+      <!-- Colonne gauche : texte -->
+      <div class="programme-text">
+        <h2><span class="elf">Programme</span></h2>
+
+        <ul class="timeline">
+          <li><time>15:30</time>
+            <div>
+              <h3>Cérémonie laïque</h3>
+              <p>Manoir de la Noë Verte</p>
+            </div>
+          </li>
+
+          <li><time>19:00</time>
+            <div>
+              <h3>Cocktail, dîner & soirée</h3>
+              <p>Manoir de la Noë Verte</p>
+            </div>
+          </li>
+
+          <li><time>11:00 (le lendemain)</time>
+            <div>
+              <h3>Brunch du dimanche</h3>
+              <p>Dans le jardin de la maison familiale des Fichou (34 Trévros)</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Colonne droite : photo -->
+      <div class="programme-photo">
+        <img src="images/manoir.jpeg" alt="Manoir de la Noë Verte" />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- === FIN : Section PROGRAMME avec image === -->
+
+
+  <!-- === DEBUT : Section LIEUX & HÉBERGEMENTS === -->
+  <section id="lieux" class="section alt">
+    <div class="container">
+      <h2><span class="elf">Lieux & Hébergements</span></h2>
+
+      <!-- Carte du lieu principal -->
+      <div class="card" style="margin-bottom:16px;">
+        <h3>Lieu principal</h3>
+        <p class="dropcap">Manoir de la Noë Verte, 22290 Lanloup</p>
+        <div class="map-embed">
+          <iframe
+            title="Manoir de la Noë Verte — Carte"
+            src="https://www.google.com/maps?q=Manoir%20de%20la%20No%C3%AB%20Verte%2C%20Lanloup&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <a class="btn" target="_blank" rel="noopener"
+           href="https://www.google.com/maps/search/?api=1&query=Manoir%20de%20la%20No%C3%AB%20Verte%2C%20Lanloup">
+          Ouvrir dans Google Maps
+        </a>
+      </div>
+
+      <h3>Exemple d'hébergements à proximité (des gites et des campings)</h3>
+      <div class="cards lodging-grid">
+        <!-- Camping -->
+        <article class="card lodging">
+          <img src="images/neptune.jpg" alt="Camping Sites & Paysages Le Neptune" class="lodging-photo">
+          <div class="lodging-body">
+            <h4 class="lodging-title">Camping Sites & Paysages Le Neptune ★★★★</h4>
+            <p class="lodging-meta">Kerguistin, 22580 Lanloup (~5 min à pied)</p>
+            <p class="lodging-note">Camping familial avec mobil-homes et chalets.</p>
+            <div class="chips"><span class="chip">Camping</span></div>
+            <div class="lodging-actions">
+              <a class="btn" target="_blank" rel="noopener" href="https://www.leneptune.com/fr/">Voir / Itinéraire</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Gîte 20 pers -->
+        <article class="card lodging">
+          <img src="images/plouha-20.jpg" alt="Maison de maître 20 personnes à Plouha" class="lodging-photo">
+          <div class="lodging-body">
+            <h4 class="lodging-title">Maison de maître — 20 personnes</h4>
+            <p class="lodging-meta">Rue du Bois du Chat, 22580 Plouha (~6 min en voiture)</p>
+            <p class="lodging-note">Grand jardin, à proximité des plages.</p>
+            <div class="chips"><span class="chip">Gîte</span></div>
+            <div class="lodging-actions">
+              <a class="btn" target="_blank" rel="noopener" href="https://www.armor-vacances.com/locations-22-cotes-d-armor/cote-de-goelo/annonce-5171-maison-20-personnes-plouha-goupil.html">Voir / Itinéraire</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Les Gîtes de Kerégal -->
+        <article class="card lodging">
+          <img src="images/keregal.jpg" alt="Les Gîtes de Kerégal à Plouha" class="lodging-photo">
+          <div class="lodging-body">
+            <h4 class="lodging-title">Les Gîtes de Kerégal — jusqu’à 16 pers.</h4>
+            <p class="lodging-meta">41 Keregal, 22580 Plouha (~8 min en voiture)</p>
+            <p class="lodging-note">Plusieurs gîtes de charme sur une même propriété.</p>
+            <div class="chips"><span class="chip">Gîtes</span></div>
+            <div class="lodging-actions">
+              <a class="btn" target="_blank" rel="noopener" href="https://www.grandsgites.com/gite-22-keregal-7011.htm">Voir / Itinéraire</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hébergement de groupe -->
+        <article class="card lodging">
+          <img src="images/plouharmor.jpg" alt="Plouharmor - Le Pavillon (hébergement de groupe)" class="lodging-photo">
+          <div class="lodging-body">
+            <h4 class="lodging-title">Plouharmor — Le Pavillon (10 à 117 pers.)</h4>
+            <p class="lodging-meta">Plouha (~10 min en voiture)</p>
+            <p class="lodging-note">Hébergement de groupe modulable, proche mer & GR34.</p>
+            <div class="chips"><span class="chip">Gîte de groupe</span></div>
+            <div class="lodging-actions">
+              <a class="btn" target="_blank" rel="noopener" href="https://www.gitedegroupe.fr/gite-groupe-As-3a47.html">Voir / Itinéraire</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Ferme de Kerloury -->
+        <article class="card lodging">
+          <img src="images/kerloury.jpg" alt="Ferme de Kerloury - Paimpol" class="lodging-photo">
+          <div class="lodging-body">
+            <h4 class="lodging-title">Ferme de Kerloury — 14 pers.</h4>
+            <p class="lodging-meta">Paimpol (~15 min en voiture)</p>
+            <p class="lodging-note">6 chambres, 13 lits — parfait pour familles.</p>
+            <div class="chips"><span class="chip">Gîte</span></div>
+            <div class="lodging-actions">
+              <a class="btn" target="_blank" rel="noopener" href="https://www.clevacances.com/fr/hebergement/39951-point">Voir / Itinéraire</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Manoir de Kerhir -->
+        <article class="card lodging">
+          <img src="images/kerhir.jpg" alt="Manoir de Kerhir - Trédarzec" class="lodging-photo">
+          <div class="lodging-body">
+            <h4 class="lodging-title">Manoir de Kerhir — 15 pers.</h4>
+            <p class="lodging-meta">Trédarzec (~25 min en voiture)</p>
+            <p class="lodging-note">Magnifique manoir breton, option plus haut de gamme.</p>
+            <div class="chips"><span class="chip">Manoir / Gîte</span></div>
+            <div class="lodging-actions">
+              <a class="btn" target="_blank" rel="noopener" href="https://www.gitedegroupe.fr/gite-groupe-dy-e2d5.html">Voir / Itinéraire</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="hint" style="margin-top:10px;">
+       Notes : 
+      </li>1/ possibilité de camper sur place (dans le champs à côté ou dans le jardin de Trévros) 🏕️ 
+      </li>2/ essayez de vous synchroniser entre invités pour le logement 🏠 et les transports 🚗; nous restons à disposition en cas de difficulté ou pour des mises en relation.   </p>
+        
+      </p>
+    </div>
+  </section>
+  <!-- === FIN : Section LIEUX & HÉBERGEMENTS === -->
+
+  <!-- === DEBUT : Section RSVP === -->
+  <section id="rsvp" class="section alt">
+    <div class="container">
+      <h2><span class="elf">RSVP</span></h2>
+      <p>Merci de remplir le formulaire ci-dessous pour nous confirmer votre présence 💌</p>
+
+      <!-- ✳️✳️✳️ COPIE ICI LE CODE FOURNI PAR GOOGLE FORMS ✳️✳️✳️ -->
+      <strong>
+        <!-- Remplace ENTIEREMENT la balise iframe suivante par celle fournie par Google Forms -->
+       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfw20qC-S2d80VWqTMtNAb4rGLd0F_GGNHUWDqjGqPM_rxRSA/viewform?embedded=true" width="640" height="972" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+      </strong>
+      <!-- ✳️✳️✳️ FIN DU BLOC GOOGLE FORMS ✳️✳️✳️ -->
+    </div>
+  </section>
+  <!-- === FIN : Section RSVP === -->
+
+  <!-- === DEBUT : Section LISTE DE MARIAGE === -->
+<section id="liste" class="section">
+  <div class="container">
+    <h2><span class="elf">Liste de mariage</span></h2>
+
+    <p class="dropcap">
+      Votre présence est déjà le plus beau des cadeaux 💚  
+      Pour ceux qui souhaitent toutefois nous soutenir, une participation libre à notre cagnotte est possible.
+    </p>
+
+    <div class="card">
+      <h3>À quoi servira la cagnotte ?</h3>
+      <ul class="leaf-list">
+        <li>Financer notre <strong>voyage</strong> de noces au pays des hobbits 🧝 (Nouvelle Zélande) !
+        <li>Améliorer la <strong>décoration et le confort</strong> de notre appartement afin de mieux accueillir nos <strong>invités de passage</strong> 🏡</li>
+      </ul>
+    </div>
+
+    <div class="card" style="text-align:center;">
+      <h3>Coordonnées bancaires (RIB)</h3>
+      <p>Vous pouvez faire un virement directement sur notre compte joint :</p>
+      <p><em> IBAN : FR76 1027 8005 8800 0209 5540 154</p>
+       </p> BIC : CMCIFR2A</em></p>
+    </div>
+
+    <p class="hint" style="margin-top:20px;text-align:center;">
+      Merci du fond du cœur pour votre générosité 💫<br>
+      Nous avons hâte de partager cette belle aventure avec vous !
+    </p>
+  </div>
+</section>
+<!-- === FIN : Section LISTE DE MARIAGE === -->
+
+
+  <!-- === DEBUT : Section FAQ / Infos pratiques === -->
+  <section id="faq" class="section">
+    <div class="container">
+      <h2><span class="elf">FAQ & Infos pratiques</span></h2>
+      <p class="hint">Quelques informations utiles pour profiter sereinement de ce week-end 🌿</p>
+
+      <div class="faq">
+        <details class="faq-item" open>
+          <summary>Accès & stationnement</summary>
+          <div class="faq-content">
+            <p><strong>Adresse :</strong> Manoir de la Noë Verte, 22290 Lanloup</p>
+            <p>Grand parking sur place, à proximité immédiate du manoir.</p>
+            <p>Un <strong>binôme de chauffeurs</strong> assurera le retour des voitures et des invités ayant bu — <strong>gratuit</strong>, système de <strong>roulement</strong> 🍸🚗</p>
+            <p><a class="btn" target="_blank" rel="noopener"
+                href="https://www.google.com/maps/search/?api=1&query=Manoir%20de%20la%20No%C3%AB%20Verte%2C%20Lanloup">Itinéraire Google Maps</a></p>
+          </div>
+        </details>
+
+                <details class="faq-item">
+          <summary>Thème vestimentaire</summary>
+          <div class="faq-content">
+            <p><strong>Pour plus d'harmonie</strong>, nous vous conseillons de privilégier des tons <strong>verts, beiges, bruns</strong> voire bleutés. Les références à l'univers de J.R.R. Tolkien sont les bienvenues 🧙‍♂️.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Animaux</summary>
+          <div class="faq-content">
+            <p><strong>Pas d’animaux</strong> sur le site du mariage 🐾 (oiseaux sur place 🦚).</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Enfants</summary>
+          <div class="faq-content">
+            <p><strong>Il s'agit d'un mariage sans enfant</strong>; vous allez pouvoir souffler un peu !</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Retour & sécurité</summary>
+          <div class="faq-content">
+            <p>Un service de chauffeurs vous ramènera, ainsi que votre voiture, en toute sécurité (roulement prévu).</p>
+            <p>Merci de privilégier cette solution plutôt que de reprendre le volant 🚫.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Plage & baignade</summary>
+          <div class="faq-content">
+            <p>La plage est à ~10 minutes — baignade possible 🌊. Prévoyez maillots & serviettes.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+  <!-- === FIN : Section FAQ / Infos pratiques === -->
+
+  <!-- Scripts -->
+  <script src="script.js?v=6"></script>
+</body>
+</html>
