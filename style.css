@@ -1,0 +1,286 @@
+/* === Thème Celtique / Elfique — Mariage Clara & Maxime === */
+
+/* — Palette & variables — */
+:root {
+  --green-1: #2E7D6E;      /* vert profond */
+  --green-2: #3C9A82;      /* vert médian */
+  --mint: #C8E3D4;         /* vert d’eau doux */
+  --beige: #F5F3EE;        /* beige clair */
+  --ink: #2B2B2B;          /* texte */
+  --muted: #5E5E5E;        /* texte secondaire */
+  --gold: #D1B27C;         /* doré doux */
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+/* — Reset & bases — */
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--beige);
+  color: var(--ink);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+/* — Sections — */
+.section {
+  padding: 64px 0;
+}
+
+.section.alt {
+  background: var(--mint);
+}
+
+.container {
+  width: min(1080px, 92%);
+  margin: 0 auto;
+}
+
+/* — Titres et typographies — */
+h1, h2, h3, h4 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  color: var(--green-1);
+  letter-spacing: .3px;
+  margin: 0 0 .6em;
+}
+
+h1 {
+  font-family: "Uncial Antiqua","Cormorant Garamond",serif;
+  font-weight: 400;
+  letter-spacing: .5px;
+}
+
+h2 .elf {
+  font-family: "Uncial Antiqua", serif;
+  font-weight: 400;
+  letter-spacing: .6px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 1em;
+  color: var(--green-2);
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+/* — Lettrine / effet manuscrit — */
+.dropcap::first-letter {
+  font-family: "Uncial Antiqua", serif;
+  font-size: 2.6rem;
+  float: left;
+  line-height: .85;
+  padding: 2px 8px 0 0;
+  color: var(--green-1);
+}
+
+/* — Navigation — */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+/* Logo */
+.brand {
+  font-family: "Uncial Antiqua", serif;
+  font-size: 1.4rem;
+  color: var(--green-1);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.brand-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background: var(--green-2);
+  color: #fff;
+  font-weight: 700;
+  margin-right: 6px;
+}
+
+/* Menu & links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--green-1);
+  font-weight: 500;
+  transition: color .2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--green-2);
+}
+
+/* Boutons */
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--green-1);
+  text-decoration: none;
+  color: #fff;
+  background: var(--green-1);
+  transition: transform .08s ease, opacity .2s;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  opacity: .95;
+}
+
+.btn-primary {
+  background: var(--green-2);
+  border-color: var(--green-2);
+}
+
+.btn-accent {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #2e2e2e;
+}
+
+/* — Hero (photo de couverture) — */
+.hero {
+  position: relative;
+  min-height: 64vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #fff;
+  background: url('images/hero.jpg') center/cover no-repeat;
+}
+
+.hero-inner {
+  padding: 64px 16px;
+  text-shadow: 0 2px 16px rgba(0,0,0,.35);
+}
+
+.subtitle {
+  opacity: .97;
+  margin-bottom: 16px;
+}
+
+/* Hero split responsive */
+.hero-split {
+  background: var(--beige);
+  color: var(--ink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  padding: 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: min(1100px, 92%);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: var(--beige);
+}
+
+/* Photo & texte */
+.hero-photo {
+  background: url('images/hero.jpg') center/cover no-repeat;
+  min-height: 85vh;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 64px;
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-family: "Uncial Antiqua", serif;
+  font-size: 3rem;
+  color: var(--green-1);
+  white-space: nowrap; /* empêche la coupure */
+}
+
+.hero-text .subtitle {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
+  color: var(--muted);
+  margin: 20px 0 32px;
+}
+
+.hero-text .btn {
+  align-self: flex-start;
+}
+
+/* Responsive hero */
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-photo {
+    min-height: 60vh;
+  }
+  .hero-text {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .hero-text .btn {
+    align-self: center;
+  }
+  .hero-text h1 {
+    font-size: 2.2rem;
+    letter-spacing: .03em;
+  }
+}
+
+/* — Floral divider — */
+.floral-divider {
+  width: 100%;
+  height: 28px;
+  margin: 18px auto 8px;
+  opacity: .98;
+  background: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' width='120' height='28' viewBox='0 0 120 28'>\
+<defs><style>.vine{fill:none;stroke:%23D1B27C;stroke-width:1.6;stroke-linecap:round}.leaf{fill:%23C8E3D4;stroke:%232E7D6E;stroke-width:1.1}.bud{fill:%232E7D6E}</style>\
+<g id='lorien'><path class='leaf' d='M0 0c6 -6 14 -6 20 0c-6 6 -14 6 -20 0z'/><path class='leaf' d='M0 0c-6 6 -14 6 -20 0c6 -6 14 -6 20 0z' transform='translate(0,0) scale(1,-1)'/>\
+<circle class='bud' cx='0' cy='0' r='1.6'/></g></defs>\
+<path class='vine' d='M0 14 C 15 6, 30 22, 45 14 S 75 6, 90 14 S 105 22, 120 14'/><g transform='translate(15,14)'><use href='%23lorien'/></g>\
+<g transform='translate(60,14)'><use href='%23lorien'/></g><g transform='translate(105,14)'><use href='%23lorien'/></g></svg>") center/120px 28px repeat-x;
+}
+
+.floral-divider.dense {
+  background-size: 90px 28px;
+}
+
+/* === Timeline, Lodging, FAQ, Lists, etc. omitted for brevity — they can be formatted similarly === */
